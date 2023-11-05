@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="vecteezy_simplicity-halloween-ghost-freehand-drawing-flat-design_11793525_820.png" type="image/icon type">
+    <link rel="stylesheet" href="ject.css">
+    <meta charset="UTF-8">
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster+Two:wght@700&family=Special+Elite&display=swap');
+  </style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Borel&family=Cedarville+Cursive&display=swap');
+  </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[pranav]</title>
+</head>
+<body>
+
+    <nav>
+        <div class="main">
+            <p class="name">QR CODE.</p>
+            </div>
+    </nav>
+
+    
+<div class="container">
+    <p>[ enter ur url ]</p>
+    
+    <input type="text" placeholder="TEXT OR URL" id="text">
+
+    <div id="qrbox">
+        <img src="" id="qrimage">
+
+        </div>
+
+    <button onclick="generateQRCode()"> generate </button>
+</div>
+
+    <footer>
+        <div class="footer-txt">
+        <p class="rght">A simple QR-code GENERATOR !</p>
+        </div>
+    </footer> 
+
+<script>
+
+    let qrbox = document.getElementById("qrbox");
+    let qrimage = document.getElementById("qrimage");
+    let text = document.getElementById("text");
+    const downloadBtn = document.getElementById("downloadBtn");
+    function generateQRCode(){
+        qrimage.src ="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +text.value;
+        qrbox.classList.add("show-img");
+        qrimage.src=qrcode;
+    }
+
+
+</script>
+
+
+</body>
+</html>
